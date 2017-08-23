@@ -1,7 +1,7 @@
 class Solution {
    public List<List<Integer>> pathSum(TreeNode root, int sum)   
     {  
-       List<List<Integer>> result=new ArrayList<List<Integer>>();//List接口变量用的ArrayList类对象实例化  
+       List<List<Integer>> result=new ArrayList<List<Integer>>();
        List<Integer> temp=new ArrayList<Integer>();  
          
        if(root==null)return result;  
@@ -16,7 +16,7 @@ class Solution {
        {  
            temp.add(root.val);  
            if(pathSum(temp)==sum)  
-               result.add(new ArrayList(temp));//一定要注意  
+               result.add(new ArrayList(temp));
            temp.remove(temp.size()-1);  
            return;  
        }  
